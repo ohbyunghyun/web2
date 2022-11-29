@@ -87,7 +87,7 @@ hr {
 #kakao {
     position: absolute;
     margin-top: 300px;
-    margin-left: 1870px;
+    margin-left: 1330px;
 }
 
 #github:hover {
@@ -97,7 +97,7 @@ hr {
 #github {
     position: absolute;
     margin-top: 340px;
-    margin-left: 1870px;
+    margin-left: 1330px;
 }
 
 #face:hover {
@@ -107,7 +107,7 @@ hr {
 #face {
     position: absolute;
     margin-top: 380px;
-    margin-left: 1870px;
+    margin-left: 1330px;
 }
 
 #gmail:hover {
@@ -117,5 +117,5 @@ hr {
 #gmail {
     position: absolute;
     margin-top: 420px;
-    margin-left: 1870px;
+    margin-left: 1330px;
 }
