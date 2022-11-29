@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/web2/includeHTML.js"></script>
+    <title>obh</title>
+    <link rel="stylesheet" href="/web2/css.css">
+</head>
+<body>
+    <header include-html="/web2/header.html"></header>
+    <nav include-html="/web2/nav.html"></nav>
+
+    <main>
+        <div>
+            <h3>1-1. 가상화</h3>
+
+            가상화란 소프트웨어를 사용하여 단일의 하드웨어 시스템에서 컴퓨팅에 필요한 물리적 자원(CPU, Memory, Disk ...)<br>
+            을 생성하여 마치 독립적인 컴퓨터처럼 작동하는 가상 컴퓨터를 생성합니다.<br><br><br>
+            
+            <img src="/web2/assets/images/1119/1.JPG" width="500px" height="300px" style="margin-left: 100px;"><br><br>
+            
+            <h3>1-2. 가상화 장점</h3>
+            
+            1. 자본 및 운영 비용 절감<br>
+            2. `다운타임` 최소화 또는 제거<br>
+            3. IT 생산성, 효율성, 대응력, 응답성 향상<br>
+            4. 애플리케이션과 리소스를 더 신속하게 `프로비저닝`<br><br>
+            
+            `다운타임` : 시스템을 이용할 수 없는 시간, 시스템이 오프라인이거나   <br>
+             사용할 수 없는 상황에 놓이는 상태   <br><br>
+            
+            `프로비저닝` : 사용자의 요구에 맞게 시스템 자원을 할당, 배치, 배포해   <br>
+             두었다가 필요 시 시스템을 즉시 사용할 수 있는 상태로   <br>
+              미리 준비해 두는 것을 말한다.   <br><br><br>
+            
+            <h3>2-1. 하이퍼바이저</h3>
+            
+            하이퍼바이저란 위에서 설명한 가상화를 구현하기위해 필요한 소프트웨어 입니다.<br><br>
+            
+            2-2. 하이퍼바이저 유형<br><br>
+        
+            <img src="/web2/assets/images/1119/2.JPG" width="400px" height="500px" style="margin-left: 100px;"><br><br>
+            
+            Native, bare-metal 이라고도 불리며 하이퍼바이저가 OS위에 설치되지않고   <br>
+            하드웨어에 직접 설치되는 타입. 물리적 서버에의 리소스에 직접 액세스 하므로   <br>
+            효율성이 뛰어나며, 공격 표면과 침해 가능성을 제한하므로 보안 또한 뛰어납니다.   <br><br>
+            
+            <img src="/web2/assets/images/1119/3.JPG" width="400px" height="500px" style="margin-left: 100px;"><br><br>
+            
+            TYPE 1과 다르게 하드웨어의 OS에서 애플리케이션으로 실행됩니다.   <br>
+            비교적 위험노출이 크고 `레이턴시`가 있지만, 설치하기가 쉬운 장점이 있습니다.   <br><br>
+            
+            `레이턴시` : 지연 (또는 대기) 시간   <br>
+            <hr>
+        </div>
+    </main>
+
+</body>
+<script>
+    includeHTML();
+</script>
+</html>

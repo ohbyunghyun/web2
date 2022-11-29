@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/web2/includeHTML.js"></script>
+    <title>obh</title>
+    <link rel="stylesheet" href="/web2/css.css">
+</head>
+<body>
+    <header include-html="/web2/header.html"></header>
+    <nav include-html="/web2/nav.html"></nav>
+
+    <main>
+        <div>
+            <h1>리눅스 기본 명령어 메뉴얼</h1>        
+<h3>제시된 리눅스 기본 명령어 메뉴얼을 작성하시오.</h3>
+
+<h3>1. 파일 시스템 탐색 기본 명령어</h3>
+
+<div id="redd">pwd : </div>
+현재 작업 디렉토리를 표시   <br>
+ <div id="redd">$ pwd</div>
+/home/vargant<br><br>
+
+<div id="redd">cd : </div>
+디렉토리 이동   <br>
+<div id="redd">$ cd git</div>
+ $ cd .. 상위 디렉토리로 이동   <br><br>
+
+ <div id="redd">ls : </div>
+현재 디렉토리에 있는 내용 리스트 출력 <br><br>
+
+<div id="redd">$ ls</div>
+bitcamp-ncp bitcamp-ncp2 bitcamp-study bitcamp-test<br>
+
+-l : 파일들을 나열할때 자세히 출력한다.   <br>
+-a : 경로안의 모든 파일을 나열한다.(숨김파일도 포함)<br><br>
+
+<div id="redd">$ ls -l</div>
+drwxrwxr-x. 3 vagrant vagrant 123 Nov 21 18:38 bitcamp-ncp   <br>
+drwxrwxr-x. 3 vagrant vagrant  48 Nov 21 09:11 bitcamp-ncp2   <br>
+drwxrwxr-x. 4 vagrant vagrant  65 Nov 21 01:34 bitcamp-study   <br>
+drwxrwxr-x. 3 vagrant vagrant 237 Nov 21 20:05 bitcamp-test   <br><br>
+
+<div id="redd">$ ls -a</div>
+.  ..  b.txt  c.txt  d.txt  .git  .gitignore  hello2.txt  README.md  x.txt<br><br>
+
+<div id="redd">file : </div>
+파일종류 확인하는 명령어   <br>
+<div id="redd">$ file README.md</div>
+README.md: ASCII text, with no line terminators<br><br>
+
+<div id="redd">less : </div>
+파일을 페이지단위로 보여주는 명령어   <br>
+<div id="redd">$ less b.txt</div>
+1111   <br>
+2222   <br>
+3333   <br>
+4444   <br>
+5555   <br>
+6666   <br>
+b.txt (END)<br><br>
+
+ 
+
+<h3> 2. 파일과 디렉토리 조작 명령어 </h3>
+
+<div id="redd">cp : </div>
+파일 및 디렉토리 복사   <br>
+<div id="redd">$ cp b.txt x.txt</div> (b.txt를 x.txt라는 이름으로 복사)   
+<div id="redd">$ ls</div>
+b.txt x.txt<br><br>
+
+<div id="redd">mv : </div>
+파일 및 디렉토리 이동또는 이름바꾸기   <br>
+<div id="redd">$ mv c.txt /bitcamp-ncp/newfolder</div> (c.txt를 newfolder로 이동)   <br>
+<div id="redd">$ mv c.txt z.txt</div> (c.txt를 z.txt로 이름변경)   <br><br>
+
+<div id="redd">mkdir : </div>
+디렉토리 생성 명령어   <br>
+<div id="redd">$ mkdir newfolder</div>
+<div id="redd">$ ls</div>
+z.txt newfolder   <br><br>
+
+<div id="redd">rm : </div>
+파일 및 디렉토리 삭제 명령어   <br>
+<div id="redd">$ rm z.txt</div>
+<div id="redd">$ ls</div>
+newfolder   <br><br>
+
+<div id="redd">ln : </div>
+특정 파일을 다른이름으로도 사용하고자 할때 사용하는 명령어   <br>
+<div id="redd">$ ln z.txt y.txt</div>
+하드 링크는 파일 헤더의 위치 정보를 기반으로 동일한 파일을 생성하는 링크   <br><br>
+
+<div id="redd">$ ln -s z.txt y.txt</div>
+MS 윈도우의 바로가기와 비슷한 개념, 그러므로 원본 파일을 수정하면 심볼릭 링크 파일   <br>
+도 수정되고, 심볼릭 링크 파일을 수정하면 원본 파일도 수정됩니다.   <br><br>
+
+
+<h3>3. 명령어를 다루는 명령어   </h3>
+
+<div id="redd">type : </div>
+지정된 명령어가 쉘에 내장된 명령어인지, 외부명령어인지, 앨리어스 명령어인지 등을 확인하는 명령어   <br>
+<div id="redd">$ type help</div>
+help is a shell builtin   <br>
+
+<div id="redd">which : </div>
+특정 명령어의 위치를 찾아주는 명령어   <br>
+<div id="redd">$ which help</div>
+/usr/bin/which: no help in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/vagrant/.local/bin:/home/vagrant/bin)   <br><br>
+
+<div id="redd">man : </div>
+온라인 매뉴얼 보는 명령어  <br> 
+<div id="redd">$ man dir</div>
+DIR(1)                     User Commands                     DIR(1)   <br><br>
+
+NAME   <br>
+       dir - list directory contents   <br><br>
+
+SYNOPSIS   <br>
+       dir [OPTION]... [FILE]...   <br><br>
+
+DESCRIPTION   <br>
+List  information  about the FILEs (the current directory by   <br>
+default).  Sort entries alphabetically if none of  -cftuvSUX   <br>
+nor --sort is specified.   <br><br>
+
+Mandatory  arguments to long options are mandatory for short   <br>
+options too.   <br><br>
+
+-a, --all   <br>
+do not ignore entries starting with .   <br><br>
+
+-A, --almost-all   <br>
+do not list implied . and ..........   <br><br>
+
+<div id="redd">apropos : </div>
+키워드를 포함하고 있는 명령을 찾는 명령어   <br>
+<div id="redd">$ apropos field</div>
+cut (1p)             - cut out selected fields of each line of a file   <br>
+fields (3pm)         - compile-time class fields   <br>
+Hash::Util::FieldHash (3pm) - Support for Inside-Out Classes   <br>
+join (1)             - join lines of two files on a common field   <br>
+systemd.journal-fields (7) - Special journal fields   <br><br>
+
+<div id="redd">info : </div>
+man 보다 상세화 된 메뉴얼   <br>
+<div id="redd">$ info ls</div>   
+File: coreutils.info,  Node: ls invocation,  Next: dir invocation,  \Up: Directory listing <br><br>
+
+10.1 'ls': List directory contents   <br>
+ ==================================   <br><br>
+
+The 'ls' program lists information about files (of any type, includi\ng   <br>
+directories).  Options and file arguments can be intermixed arbitrar\ily,   <br>
+as usual........   <br><br>
+
+<div id="redd">whatis : </div>
+명령어에대한 간단한 설명 출력 <br>  
+<div id="redd">$ whatis dir</div>
+ dir (1)              - list directory contents   <br><br>
+
+ <div id="redd">alias : </div>
+자주 사용하는 명령어를 특정문자로 입력해두고 간편하게 사용할수 있게해줌   <br>
+<div id="redd">$ alias md=mkdir</div>
+<div id="redd">$ md newfolder2</div>
+<div id="redd">$ ls</div>
+z.txt y.txt newfolder newfolder2   <br>
+<hr>
+        </div>
+    </main>
+</body>
+<script>
+    includeHTML();
+</script>
+</html>
