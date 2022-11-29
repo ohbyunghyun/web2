@@ -1,8 +1,9 @@
 body {
-    background-color: darkgrey;
+    background-color: aliceblue;
     font-size: medium;
     min-height: 100%;
-    font-family: fantasy;
+    background-image: url(assets/images/back.JPG);
+    background-position: 70px 0px;
 }
 
 header {
@@ -28,6 +29,7 @@ footer {
     margin-left: 360px;
     bottom: 0;
     width: 700px;
+    font-family: fantasy;
 }
 
 main {
@@ -35,6 +37,7 @@ main {
     height: auto;
     margin-left: 600px;
     margin-top: 250px;
+    font-size: 25px;
 }
 
 nav {
@@ -43,6 +46,7 @@ nav {
     position: absolute;
     width: 600px;
     font-size: 1.3em;
+    font-family: fantasy;
 }
 
 #menu:hover {
@@ -67,7 +71,7 @@ li {
 
 #welcome {
     font-size: 5.0em;
-    margin-left: 200px;
+    margin-left: 50px;
 }
 
 hr {
@@ -81,7 +85,7 @@ hr {
 
 
 #kakao:hover {
-    background-color: white;
+    background-color: red;
 }
 
 #kakao {
@@ -91,7 +95,7 @@ hr {
 }
 
 #github:hover {
-    background-color: white;
+    background-color: red;
 }
 
 #github {
@@ -101,7 +105,7 @@ hr {
 }
 
 #face:hover {
-    background-color: white;
+    background-color: red;
 }
 
 #face {
@@ -111,11 +115,44 @@ hr {
 }
 
 #gmail:hover {
-    background-color: white;
+    background-color: red;
 }
 
 #gmail {
     position: absolute;
     margin-top: 420px;
     margin-left: 1330px;
+}
+
+#red:hover{
+    color: red;
+}
+
+#oran:hover{
+    color: orange;
+}
+
+#yel:hover{
+    color: yellow;
+}
+
+#cho:hover{
+    color: green;
+}
+
+#blue:hover{
+    color: blue;
+}
+
+#nam:hover{
+    color: navy;
+}
+
+#vio:hover{
+    color: violet;
+}
+
+#red, #oran, #yel, #cho, #blue, #nam, #vio {
+    text-decoration: none;
+    color: black;
 }
