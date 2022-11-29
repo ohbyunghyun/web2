@@ -157,3 +157,69 @@ hr {
     text-decoration: none;
     color: black;
 }
+
+#bb {
+    text-decoration: none;
+}
+
+#port {
+    margin-left: 72px;
+}
+
+#cc:hover{
+    width: 200px;
+    height: 200px;
+}
+
+#ico {
+    text-decoration: none;
+}
+
+#icon {
+    margin-top: 400px;
+    margin-left: 100px;
+    letter-spacing: 25px;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+#ka:hover{
+    background-color: gray;
+}
+
+#ka {
+    animation:fadeIn 1s;    
+}
+
+#git:hover{
+    background-color: gray;
+}
+
+#git {
+    animation:fadeIn 3s;    
+}
+
+#gm:hover{
+    background-color: gray;
+}
+
+#gm {
+    animation:fadeIn 5s;    
+}
+
+#fac:hover{
+    background-color: gray;
+}
+
+#fac {
+    animation:fadeIn 6s;    
+}
