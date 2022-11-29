@@ -27,10 +27,15 @@ header {
 
 footer {
     position: absolute;
-    margin-left: 360px;
+    margin-left: 320px;
     bottom: 0;
     width: 700px;
     font-family: fantasy;
+}
+
+#foot:hover{
+    font-size: 17px;
+    color: royalblue;
 }
 
 main {
@@ -86,7 +91,7 @@ hr {
 
 
 #kakao:hover {
-    background-color: red;
+    background-color: gray;
 }
 
 #kakao {
@@ -96,7 +101,7 @@ hr {
 }
 
 #github:hover {
-    background-color: red;
+    background-color: gray;
 }
 
 #github {
@@ -106,7 +111,7 @@ hr {
 }
 
 #face:hover {
-    background-color: red;
+    background-color: gray;
 }
 
 #face {
@@ -116,7 +121,7 @@ hr {
 }
 
 #gmail:hover {
-    background-color: red;
+    background-color: gray;
 }
 
 #gmail {
