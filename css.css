@@ -26,11 +26,12 @@ header {
 }
 
 footer {
-    position: absolute;
     margin-left: 320px;
+    margin-top:500px;
     bottom: 0;
     width: 700px;
     font-family: fantasy;
+    min-height: 50px;
 }
 
 #foot:hover{
@@ -227,4 +228,8 @@ hr {
 
 #fac {
     animation:fadeIn 6s;    
+}
+
+aside {
+    position: fixed;
 }
